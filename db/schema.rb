@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20180222063752) do
   create_table "snippets", force: :cascade do |t|
     t.text     "body"
     t.boolean  "is_private"
-    t.string   "url"
+    t.string   "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

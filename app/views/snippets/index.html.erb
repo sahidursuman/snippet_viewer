@@ -1,0 +1,26 @@
+<div class="snippet-box">
+
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        Snippets
+      </td>
+      <td>
+        <%= link_to "Create Snippet", new_snippet_path %>
+      </td>
+    </tr>
+  </table>
+
+  <table cellpadding="0" cellspacing="0">
+
+    <% @snippets.each do |snippet| %>
+        <tr class="item">
+          <td>
+            <%= link_to snippet do %>
+                <%= truncate(snippet.body, length: 15, separator: ' ') %>
+            <% end %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

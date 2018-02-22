@@ -1,0 +1,21 @@
+<div class="snippet-box">
+  <p id="notice"><%= notice %></p>
+
+  <div>
+    <strong>Body:</strong>
+
+    <div class="body-content">
+      <%= @snippet.body %>
+    </div>
+  </div>
+
+  <div>
+    <strong>Share This</strong>
+
+    <div class="url-content">
+      <%= snippets_view_url(slug: @snippet.slug) %>
+    </div>
+  </div>
+  <%= link_to 'Back', snippets_path %>
+</div>
+

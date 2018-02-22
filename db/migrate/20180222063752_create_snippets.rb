@@ -3,7 +3,7 @@ class CreateSnippets < ActiveRecord::Migration
     create_table :snippets do |t|
       t.text :body
       t.boolean :is_private
-      t.string :url
+      t.string :slug
 
       t.timestamps null: false
     end
